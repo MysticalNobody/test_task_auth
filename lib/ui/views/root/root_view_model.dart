@@ -25,11 +25,4 @@ class RootViewModel extends BaseViewModel {
   bool get hasPin => authRepository.pin?.val != null;
 
   Future<void> onReady() async {}
-
-  int index = 0;
-
-  void changePage(int index) {
-    this.index = index;
-    notifyListeners();
-  }
 }
