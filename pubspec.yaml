@@ -1,0 +1,58 @@
+name: test_task_auth
+description: itis.team
+
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.10.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #i18n
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.16.1
+
+  #architecture
+  provider: ^4.3.2+3
+  stacked: ^1.7.7
+  rxdart: ^0.24.0
+
+  #database
+  get_storage:
+    git:
+      url: "https://git.itis.team/public-projects/get_storage.git"
+
+
+  #widgets
+  auto_size_text: ^2.1.0
+  cupertino_icons: ^1.0.0
+  flutter_platform_widgets: ^0.72.0
+
+  #features
+  supercharged: ^1.10.0
+  logger: ^0.9.4
+  local_auth: ^0.6.3+4
+
+dev_dependencies:
+  build_runner: ^1.10.7
+  json_serializable: ^3.5.1
+  lint:
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/icons/
+    - assets/images/
+    - assets/map/
+
+flutter_intl:
+  enabled: true
+  main_locale: ru
+  class_name: Strings
+  arb_dir: lib/l10n
+  output_dir: lib/l10n/generated
